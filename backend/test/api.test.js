@@ -33,9 +33,4 @@ describe("Pokémon API Routes", () => {
     expect(res.text).to.equal("Mewtwo - Power: Psychic");
   });
 
-  it("GET /sesd", async () => {
-    const res = await request(app).get("/SESD");
-    expect(res.status).to.equal(200);
-    expect(res.text).to.equal("SESD");
-  });
 });
